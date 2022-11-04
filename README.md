@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-![Screenshot of Website](/src/jpg/PorfolioWebsiteScreenshot.jpg)
+<img src="/src/jpg/PorfolioWebsiteScreenshot.jpg" alt="Screenshot of Website" width="500"/>
 
 This is a small portfolio website made for, and by, Bryce Huhtala.
 

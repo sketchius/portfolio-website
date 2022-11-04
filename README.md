@@ -1,5 +1,7 @@
 # Personal Portfolio Website
 
+![Screenshot of Website](/src/jpg/PorfolioWebsiteScreenshot.jpg)
+
 This is a small portfolio website made for, and by, Bryce Huhtala.
 
 ## Technology Used

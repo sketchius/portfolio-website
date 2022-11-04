@@ -232,7 +232,7 @@ function App() {
 						<article>
 							<ProjectInfo
 								title={'Task Traffic Control'}
-								description={`A Productivity App that makes it easy to capture and keep track of everything you need to get done. Features`}
+								description={`A productivity app for capturing and keeping track of things that need to be done. Features optional server-side data backup.`}
 								screenshot={ttcScreenshot}
 								tags={['Android App', 'React Native', 'Redux', 'Node', 'Express', 'Mongo']}
 								links={[

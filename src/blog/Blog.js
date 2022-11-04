@@ -1,18 +1,21 @@
 import React from 'react';
 import { BlogArticle } from './BlogArticle';
+import './blog.css';
 
 import sampleData from './article/sample-data.json';
 
 function Blog() {
 	return (
-		<BlogArticle
-			title={sampleData.title}
-			subTitle={sampleData.subTitle}
-			author={sampleData.author}
-			authorLink={sampleData.authorLink}
-			publicationDate={sampleData.publicationDate}
-			body={sampleData.body}
-		/>
+		<div className='blog'>
+			<BlogArticle
+				title={sampleData.title}
+				subTitle={sampleData.subTitle}
+				author={sampleData.author}
+				authorLink={sampleData.authorLink}
+				publishDate={sampleData.publishDate}
+				body={sampleData.body}
+			/>
+		</div>
 	);
 }
 

@@ -1,0 +1,83 @@
+@import url("https://use.typekit.net/ppg0eht.css");
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap');
+
+.blog {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+}
+
+.blog-content {
+    margin-top: 10rem;
+    flex-basis: 58vw;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    color: #25679e; 
+    font-family: montserrat, sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-block-start: 0;
+    margin-block-end: 1rem;
+}
+
+h1 small {
+    color: #4189C4;
+    font-family: montserrat, sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.publish-information {
+    margin-left: 2rem;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    gap: 1rem;
+}
+
+.publish-information address {
+    display: flex;
+    align-items: center;
+}
+
+.publish-information img {
+    width: 2rem;
+    height: 2rem;
+    border-width: 2px;
+    margin-right: .6rem;
+    color: #B77682;
+    border-style: solid;
+    border-radius: 3rem;
+}
+
+.publish-information a {
+    height: min-content;
+    display: flex;
+    vertical-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    text-decoration: none;
+    color: #B77682;
+}
+
+.publish-information .publish-date {
+    margin-left: 2rem;
+    color: #756C98;
+    display: flex;
+    font-family: montserrat, sans-serif;
+    font-size: .8rem;
+    flex-direction: column;
+}
+
+.publish-information time {
+    font-size: 1rem;
+    font-family: 'Source Code Pro', monospace;
+}
+
+article {
+    margin-top: 3rem;
+}

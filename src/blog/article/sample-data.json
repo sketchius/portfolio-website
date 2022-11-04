@@ -1,7 +1,8 @@
 {
     "title": "This is a Test Article",
-    "subtitle": "It's Just a Test...",
+    "subTitle": "It's Just a Test...",
     "author": "Jason Testa",
     "authorLink": "/",
+    "publishDate": "11/3/2022",
     "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat dapibus ante, sodales eleifend mi elementum quis. Vivamus nibh nulla, posuere venenatis pulvinar eu, tincidunt vulputate justo. Nulla quam magna, vestibulum in fringilla laoreet, rhoncus euismod nulla. Donec auctor consequat orci, nec pulvinar tortor. Duis faucibus ornare enim vitae luctus. Vivamus condimentum, nisi eu varius vestibulum, enim diam egestas eros, eu tincidunt ante dui eget tortor. Nulla facilisi. Integer venenatis ipsum a eros finibus, rhoncus fringilla augue tempus. Donec interdum erat vel sapien ultrices, vel tincidunt ante dapibus. Sed consectetur consectetur aliquam. Cras facilisis lorem nisl, sit amet pellentesque risus euismod quis. Mauris molestie eget magna et ullamcorper. Sed quis volutpat nisi, in mattis orci.\n    Integer nisl odio, tristique et viverra eget, pharetra ut lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi aliquam magna id vestibulum fermentum. Mauris gravida, ante a pulvinar dictum, ligula sem euismod purus, sit amet blandit tellus lectus sit amet eros. Ut auctor auctor felis, eu tempor odio posuere id. Duis a erat ullamcorper, pharetra ex in, sagittis dolor. Sed nec tellus sem. Praesent diam nisi, dignissim at commodo sed, feugiat et justo. Pellentesque a congue orci. Ut vel euismod erat."
 }

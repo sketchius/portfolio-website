@@ -5,6 +5,7 @@ import avatar from './avatar.jpg';
 export const BlogArticle = props => {
 	return (
 		<main className='blog-content'>
+			{props.mainImage}
 			<h1>
 				{props.title}
 				<small>{props.subTitle}</small>

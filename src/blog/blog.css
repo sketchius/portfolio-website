@@ -6,9 +6,19 @@
     width: 100vw;
     height: 100vh;
     justify-content: center;
+    color:#44406C;
+    font-family: montserrat, sans-serif;
+}
+
+p {
+    font-size: 1.3rem;
+    color:#44406C;
+    font-family: montserrat, sans-serif;
 }
 
 .blog-content {
+    display: flex;
+    flex-direction: column;
     margin-top: 10rem;
     flex-basis: 58vw;
 }
@@ -80,4 +90,36 @@ h1 small {
 
 article {
     margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-aligned {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.skills {
+    border-width: 1px;
+    border-color:#44406C;
+    border-radius: 5.px;
+    width: 25ch;
+}
+
+.header-image {
+    margin: 3rem;
+}
+
+.medium-image {
+    align-self: center;
+    width: 400px;
+}
+.large-image {
+    align-self: center;
+    width: 800px;
+}
+
+p strong {
+    color:#4189C4;
+    font-weight: 600;
 }

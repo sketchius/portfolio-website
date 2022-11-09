@@ -5,12 +5,11 @@ import avatar from './avatar.jpg';
 export const BlogArticle = props => {
 	return (
 		<main className='blog-content'>
-			{props.mainImage}
+			<img src={props.mainImage} alt={props.mainImageAltz} className='medium-image header-image' />;
 			<h1>
 				{props.title}
 				<small>{props.subTitle}</small>
 			</h1>
-
 			<div className='publish-information'>
 				<address>
 					<img src={avatar} alt='author avatar' />

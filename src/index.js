@@ -5,10 +5,23 @@ import App from './App';
 import { Page as BlogArticle1 } from './blog/article/deconstructed-blueprint/index';
 import reportWebVitals from './reportWebVitals';
 
+import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
+
+const router = createBrowserRouter([
+	{
+		path: '/',
+		element: <App />,
+	},
+	{
+		path: 'blog',
+		element: <BlogArticle1 />,
+	},
+]);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<React.StrictMode>
-		<BlogArticle1 />
+		<RouterProvider router={router} />
 	</React.StrictMode>
 );
 

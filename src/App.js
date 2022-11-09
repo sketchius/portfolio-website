@@ -1,6 +1,7 @@
 import { SectionHeader } from './Components/SectionHeader';
 import './App.css';
 import { IconList } from './Components/IconList';
+import { BlogCard } from './Components/BlogCard';
 import { ReactComponent as PortraitSVG } from './svg/portrait.svg';
 import { ReactComponent as BackgroundSVG } from './svg/landing-page-background.svg';
 import { ProjectInfo } from './Components/ProjectInfo';
@@ -264,6 +265,12 @@ function App() {
 									},
 								]}
 							/>
+						</article>
+					</section>
+					<section id='blog'>
+						<SectionHeader number={'04'} title={'Blog'}></SectionHeader>
+						<article>
+							<BlogCard article={'deconstructed-blueprint'} />
 						</article>
 					</section>
 				</div>

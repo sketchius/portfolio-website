@@ -1,22 +1,8 @@
-import { BlogArticle } from '../../BlogArticle';
-import { BlogCard } from '../../BlogCard';
-
 import MainImage from './media/main.png';
 import SketchImage from './media/sketch.png';
 import Step1Image from './media/step1.png';
 import Step2Image from './media/step2.png';
 import Step3Image from './media/step3.png';
-
-const data = {
-	title: 'Explode your wireframe',
-	caption: 'A technique to help streamline your layout and styling workflow.',
-	subTitle: 'Deconstructing a design to make a blueprint',
-	author: 'Bryce Huhtala',
-	authorLink: '/',
-	publishDate: '11/5/2022',
-};
-
-const getHeaderImage = () => {};
 
 const Body = () => {
 	return (
@@ -77,36 +63,31 @@ const Body = () => {
 	);
 };
 
-export const Page = props => {
-	return (
-		<div className='blog'>
-			<BlogArticle
-				mainImage={MainImage}
-				mainImageAlt={'wireframe illustration'}
-				title={data.title}
-				subTitle={data.subTitle}
-				author={data.author}
-				authorLink={data.authorLink}
-				publishDate={data.publishDate}
-				body={<Body />}
-			/>
-		</div>
-	);
+export const data = {
+	title: 'Explode your wireframe',
+	mainImage: MainImage,
+	mainImageAlt: 'exploded view illustration',
+	caption: 'A technique to help streamline your layout and styling workflow.',
+	subTitle: 'Deconstructing a design to make a blueprint',
+	author: 'Bryce Huhtala',
+	authorLink: '/',
+	publishDate: '11/5/2022',
+	body: <Body />,
 };
 
-export const Card = props => {
-	return (
-		<div className='blog'>
-			<BlogCard
-				mainImage={MainImage}
-				caption={data.caption}
-				title={data.title}
-				subTitle={data.subTitle}
-				author={data.author}
-				authorLink={data.authorLink}
-				publishDate={data.publishDate}
-				body={<Body />}
-			/>
-		</div>
-	);
-};
+// export const Card = props => {
+// 	return (
+// 		<div className='blog'>
+// 			<BlogCard
+// 				mainImage={MainImage}
+// 				caption={data.caption}
+// 				title={data.title}
+// 				subTitle={data.subTitle}
+// 				author={data.author}
+// 				authorLink={data.authorLink}
+// 				publishDate={data.publishDate}
+// 				body={<Body />}
+// 			/>
+// 		</div>
+// 	);
+// };

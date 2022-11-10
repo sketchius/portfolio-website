@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { Page as BlogArticle1 } from './blog/article/deconstructed-blueprint/index';
 import reportWebVitals from './reportWebVitals';
 
 import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
@@ -12,10 +11,10 @@ const router = createBrowserRouter([
 		path: '/',
 		element: <App />,
 	},
-	{
-		path: 'blog',
-		element: <BlogArticle1 />,
-	},
+	// {
+	// 	path: 'blog',
+	// 	element: <BlogArticle1 />,
+	// },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

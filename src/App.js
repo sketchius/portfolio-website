@@ -15,6 +15,8 @@ import resume from './doc/Bryce Huhtala Resume.pdf';
 
 import websiteScreenshot from './jpg/PorfolioWebsiteScreenshot.jpg';
 import ttcScreenshot from './jpg/TTCScreenshot.jpg';
+import { BlogArticle } from './blog/BlogArticle';
+import { getBlogData } from './blog/Blog';
 
 function App() {
 	return (
@@ -270,7 +272,7 @@ function App() {
 					<section id='blog'>
 						<SectionHeader number={'04'} title={'Blog'}></SectionHeader>
 						<article>
-							<BlogCard article={'deconstructed-blueprint'} />
+							<BlogArticle reference={'deconstructed-blueprint'} />
 						</article>
 					</section>
 				</div>

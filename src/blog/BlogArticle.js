@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './blog.css';
 import avatar from './avatar.jpg';
 
-export const BlogArticle = props => {
+const BlogArticleContent = props => {
 	return (
 		<main className='blog-content'>
 			<img src={props.mainImage} alt={props.mainImageAltz} className='medium-image header-image' />;
@@ -24,5 +24,31 @@ export const BlogArticle = props => {
 			</div>
 			<article>{props.body}</article>
 		</main>
+	);
+};
+
+export const BlogArticle = props => {
+	const [data, setData] = useState(undefined);
+
+	useEffect(() => {
+		import(`../blog/article/${props.reference}/index.js`).then(blog => {
+			if (blog) setData(blog.data);
+		});
+	}, []);
+	return (
+		<div className='blog'>
+			{data && (
+				<BlogArticleContent
+					mainImage={data.mainImage}
+					mainImageAlt={data.mainImageAlt}
+					title={data.title}
+					subTitle={data.subTitle}
+					author={data.author}
+					authorLink={data.authorLink}
+					publishDate={data.publishDate}
+					body={data.body}
+				/>
+			)}
+		</div>
 	);
 };

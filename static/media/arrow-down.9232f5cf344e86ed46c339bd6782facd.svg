@@ -1,0 +1,22 @@
+<svg id="a43bb1f4-3896-4412-80b9-19badda6417d" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+  <defs>
+    <style>
+      .b2728832-73d3-409a-b6f8-e5db30d26790 {
+        fill: #fff;
+      }
+
+      .b2728832-73d3-409a-b6f8-e5db30d26790, .b5a575c9-a924-4351-9011-49d9a82ce6ba {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+
+      .b5a575c9-a924-4351-9011-49d9a82ce6ba {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <title>arrow-down</title>
+  <line class="b2728832-73d3-409a-b6f8-e5db30d26790" x1="25" y1="5" x2="25" y2="45"/>
+  <polyline class="b5a575c9-a924-4351-9011-49d9a82ce6ba" points="15 35 25 45 35 35"/>
+</svg>

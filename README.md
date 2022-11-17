@@ -2,7 +2,7 @@
 
 <img src="/src/jpg/PorfolioWebsiteScreenshot-Small.jpg" alt="Screenshot of Website" width="500"/>
 
-This is a small portfolio website made for, and by, Bryce Huhtala.
+This is a small portfolio website made for, and by, Bryce Huhtala. It also serves as a blog.
 
 ## Technology Used
 
@@ -15,9 +15,3 @@ This is a small portfolio website made for, and by, Bryce Huhtala.
 -   Semantic HTML
 -   Mobile-First Approach
 -   Responsive Design
-
-## Future Plans
-
--   Blog
--   More Animations
--   More Projects

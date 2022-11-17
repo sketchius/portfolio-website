@@ -1,4 +1,4 @@
-import MainImage from './media/main.png';
+import MainImage from './media/main-image.jpg';
 import SketchImage from './media/sketch.png';
 import Step1Image from './media/step1.png';
 import Step2Image from './media/step2.png';

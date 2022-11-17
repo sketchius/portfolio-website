@@ -17,45 +17,60 @@ import { ReactComponent as Illustrator } from './../svg/illustrator.svg';
 import { ReactComponent as Photoshop } from './../svg/photoshop.svg';
 import { ReactComponent as Resolve } from './../svg/resolve.svg';
 import { ReactComponent as Api } from './../svg/api.svg';
+import { ReactComponent as Code } from './../svg/code.svg';
+import { ReactComponent as Live } from './../svg/live.svg';
+import { ReactComponent as About } from './../svg/about.svg';
 
 export const SvgImage = props => {
+	let className = 'svg-icon';
+
+	if (props.small) {
+		className = 'svg-icon small';
+	}
+
 	switch (props.name) {
 		case 'html':
-			return <HtmlIcon className={'svg-icon'} />;
+			return <HtmlIcon className={className} />;
 		case 'css':
-			return <CssIcon className={'svg-icon'} />;
+			return <CssIcon className={className} />;
 		case 'javascript':
-			return <JavascriptIcon className={'svg-icon'} />;
+			return <JavascriptIcon className={className} />;
 		case 'react':
-			return <ReactIcon className={'svg-icon'} />;
+			return <ReactIcon className={className} />;
 		case 'checkmark':
-			return <Checkmark className={'svg-icon'} />;
+			return <Checkmark className={className} />;
 		case 'plus':
-			return <Plus className={'svg-icon'} />;
+			return <Plus className={className} />;
 		case 'chart':
-			return <Chart className={'svg-icon'} />;
+			return <Chart className={className} />;
 		case 'github':
-			return <Github className={'svg-icon'} />;
+			return <Github className={className} />;
 		case 'linkedin':
-			return <Linkedin className={'svg-icon'} />;
+			return <Linkedin className={className} />;
 		case 'resume':
-			return <Resume className={'svg-icon'} />;
+			return <Resume className={className} />;
 		case 'node':
-			return <Node className={'svg-icon'} />;
+			return <Node className={className} />;
 		case 'express':
-			return <Express className={'svg-icon'} />;
+			return <Express className={className} />;
 		case 'mongo':
-			return <Mongo className={'svg-icon'} />;
+			return <Mongo className={className} />;
 		case 'java':
-			return <Java className={'svg-icon'} />;
+			return <Java className={className} />;
 		case 'illustrator':
-			return <Illustrator className={'svg-icon'} />;
+			return <Illustrator className={className} />;
 		case 'photoshop':
-			return <Photoshop className={'svg-icon'} />;
+			return <Photoshop className={className} />;
 		case 'resolve':
-			return <Resolve className={'svg-icon'} />;
+			return <Resolve className={className} />;
 		case 'api':
-			return <Api className={'svg-icon'} />;
+			return <Api className={className} />;
+		case 'code':
+			return <Code className={className + ' no-fill'} />;
+		case 'live':
+			return <Live className={className + ' no-fill'} />;
+		case 'about':
+			return <About className={className + ' no-fill'} />;
 		default:
 			return <div>?</div>;
 	}

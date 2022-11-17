@@ -5,16 +5,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
+import { BlogArticle } from './blog/BlogArticle';
 
 const router = createBrowserRouter([
 	{
 		path: '/',
 		element: <App />,
 	},
-	// {
-	// 	path: 'blog',
-	// 	element: <BlogArticle1 />,
-	// },
+	{
+		path: 'blog/:reference',
+		element: <BlogArticle />,
+	},
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

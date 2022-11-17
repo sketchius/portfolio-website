@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import './blog.css';
 import avatar from './avatar.jpg';
+import { useParams } from 'react-router-dom';
 
 const BlogArticleContent = props => {
 	return (
 		<main className='blog-content'>
-			<img src={props.mainImage} alt={props.mainImageAltz} className='medium-image header-image' />;
+			<img src={props.mainImage} alt={props.mainImageAltz} className='medium-image header-image' />
 			<h1>
 				{props.title}
 				<small>{props.subTitle}</small>
@@ -29,9 +30,10 @@ const BlogArticleContent = props => {
 
 export const BlogArticle = props => {
 	const [data, setData] = useState(undefined);
+	const { reference } = useParams();
 
 	useEffect(() => {
-		import(`../blog/article/${props.reference}/index.js`).then(blog => {
+		import(`../blog/article/${reference}/index.js`).then(blog => {
 			if (blog) setData(blog.data);
 		});
 	}, []);

@@ -1,5 +1,7 @@
 import './Components.css';
 
+import { SvgImage } from './SvgImage';
+
 const getTagContent = tags => {
 	return (
 		<div className='bracket-group'>
@@ -18,7 +20,12 @@ const getLinkContent = links => {
 	return (
 		<div className='buttons'>
 			{links.map(link => {
-				return <a href={link.url}>{link.text}</a>;
+				return (
+					<a href={link.url}>
+						<SvgImage name={link.text.toLowerCase()} small={true} />
+						{link.text}
+					</a>
+				);
 			})}
 		</div>
 	);
@@ -29,19 +36,11 @@ export const ProjectInfo = props => {
 		<div className='project-info'>
 			<div className='curly-bracket-left' />
 			<div className='content'>
-				<div className='left'>
-					<div className='image-holder'>
-						{props.screenshot ? (
-							<img src={props.screenshot} className='image' />
-						) : (
-							<div className='image' />
-						)}
-					</div>
-					{getLinkContent(props.links)}
-				</div>
+				{props.screenshot ? <img src={props.screenshot} className='image' /> : <div className='image' />}
 				<div className='right'>
 					<p className='title'>{props.title}</p>
 					<p className='desc'>{props.description}</p>
+					{getLinkContent(props.links)}
 					{getTagContent(props.tags)}
 				</div>
 			</div>

@@ -30,6 +30,7 @@ const getListChildren = list => {
 export const IconList = props => {
 	return (
 		<div className='icon-list'>
+			{props.image && <img src={props.image} alt={props.imageAlt} />}
 			<div className='title'>
 				<span className='const'>const </span>
 				<span className='name'>{props.title}</span>

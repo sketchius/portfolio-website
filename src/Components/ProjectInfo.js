@@ -1,6 +1,5 @@
-import './Components.css';
-
 import { SvgImage } from './SvgImage';
+import Image from 'next/image';
 
 const getTagContent = tags => {
 	return (
@@ -36,7 +35,7 @@ export const ProjectInfo = props => {
 		<div className='project-info'>
 			<div className='curly-bracket-left' />
 			<div className='content'>
-				{props.screenshot ? <img src={props.screenshot} className='image' /> : <div className='image' />}
+				{props.screenshot ? <Image src={props.screenshot} className='image' /> : <div className='image' />}
 				<div className='right'>
 					<p className='title'>{props.title}</p>
 					<p className='desc'>{props.description}</p>

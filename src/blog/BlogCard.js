@@ -1,5 +1,4 @@
 import React from 'react';
-import './blog.css';
 
 export const BlogCard = props => {
 	return (

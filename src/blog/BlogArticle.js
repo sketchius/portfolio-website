@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from 'react';
-import './blog.css';
 import avatar from './avatar.jpg';
 import { useParams } from 'react-router-dom';
+import Image from 'next/image';
 
 const BlogArticleContent = props => {
 	return (
 		<main className='blog-content'>
-			<img src={props.mainImage} alt={props.mainImageAltz} className='medium-image header-image' />
+			<Image src={props.mainImage} alt={props.mainImageAltz} className='medium-image header-image' />
 			<h1>
 				{props.title}
 				<small>{props.subTitle}</small>
 			</h1>
 			<div className='publish-information'>
 				<address>
-					<img src={avatar} alt='author avatar' />
+					<Image src={avatar} alt='author avatar' />
 					<a href={props.authorLink} rel='author'>
 						{props.author}
 					</a>
@@ -29,28 +29,18 @@ const BlogArticleContent = props => {
 };
 
 export const BlogArticle = props => {
-	const [data, setData] = useState(undefined);
-	const { reference } = useParams();
-
-	useEffect(() => {
-		import(`../blog/article/${reference}/index.js`).then(blog => {
-			if (blog) setData(blog.data);
-		});
-	}, []);
 	return (
 		<div className='blog'>
-			{data && (
-				<BlogArticleContent
-					mainImage={data.mainImage}
-					mainImageAlt={data.mainImageAlt}
-					title={data.title}
-					subTitle={data.subTitle}
-					author={data.author}
-					authorLink={data.authorLink}
-					publishDate={data.publishDate}
-					body={data.body}
-				/>
-			)}
+			<BlogArticleContent
+				mainImage={props.data.mainImage}
+				mainImageAlt={props.data.mainImageAlt}
+				title={props.data.title}
+				subTitle={props.data.subTitle}
+				author={props.data.author}
+				authorLink={props.data.authorLink}
+				publishDate={props.data.publishDate}
+				body={props.data.body}
+			/>
 		</div>
 	);
 };

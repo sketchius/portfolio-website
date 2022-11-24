@@ -181,7 +181,7 @@
 	flex-grow: 0;
 	flex-shrink: 0;
 	background-size: cover;
-	background-image: url(../svg/left-bracket.svg);
+	background-image: url(../../public/assets/svg/left-bracket.svg);
 }
 
 .icon-list .right-curly-bracket {
@@ -189,7 +189,7 @@
 	flex-grow: 0;
 	flex-shrink: 0;
 	background-size: cover;
-	background-image: url(../svg/right-bracket.svg);
+	background-image: url(../../public/assets/svg/right-bracket.svg);
 }
 
 .icon-list .comma {
@@ -551,7 +551,7 @@
 		flex-grow: 0;
 		flex-shrink: 0;
 		background-size: cover;
-		background-image: url(../svg/left-bracket.svg);
+		background-image: url(../../public/assets/svg/left-bracket.svg);
 	}
 
 	.icon-list .right-curly-bracket {
@@ -559,7 +559,7 @@
 		flex-grow: 0;
 		flex-shrink: 0;
 		background-size: cover;
-		background-image: url(../svg/right-bracket.svg);
+		background-image: url(../../public/assets/svg/right-bracket.svg);
 	}
 
 	.icon-list .curly-bracket path {
@@ -652,7 +652,7 @@
 		flex-grow: 0;
 		flex-shrink: 0;
 		background-size: cover;
-		background-image: url(../svg/left-bracket.svg);
+		background-image: url(../../public/assets/svg/left-bracket.svg);
 	}
 
 	.project-info .curly-bracket-right {
@@ -660,7 +660,7 @@
 		flex-grow: 0;
 		flex-shrink: 0;
 		background-size: cover;
-		background-image: url(../svg/right-bracket.svg);
+		background-image: url(../../public/assets/svg/right-bracket.svg);
 	}
 
 	.project-info .content {
@@ -674,6 +674,7 @@
 	.project-info .image {
 		flex-basis: auto;
 		height: 100%;
+		width: auto;
 	}
 
 	.project-info .right .square-bracket-left {

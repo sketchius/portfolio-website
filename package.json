@@ -1,6 +1,6 @@
 {
   "name": "portfolio-website",
-  "homepage": "https://sketchius.github.io/portfolio-website/",
+  "homepage": "http://http://sketchius.github.io/portfolio-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,8 +9,9 @@
     "@testing-library/user-event": "^13.5.0",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
     "sort-by": "^1.2.0",
@@ -19,10 +20,9 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +43,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "@svgr/webpack": "^6.5.1",
+    "gh-pages": "^4.0.0",
+    "next-svgr": "^0.0.2"
   }
 }

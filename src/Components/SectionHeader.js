@@ -1,5 +1,3 @@
-import './Components.css';
-
 export const SectionHeader = props => {
 	return (
 		<div className='section-header'>

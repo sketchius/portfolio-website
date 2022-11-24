@@ -1,8 +1,8 @@
-import './Components.css';
 import { SvgImage } from './SvgImage';
+import Image from 'next/image';
 
-import { ReactComponent as LeftCurlyBracket } from './../svg/left-bracket.svg';
-import { ReactComponent as RightCurlyBracket } from './../svg/right-bracket.svg';
+import { ReactComponent as LeftCurlyBracket } from '../../public/assets/svg/left-bracket.svg';
+import { ReactComponent as RightCurlyBracket } from '../../public/assets/svg/right-bracket.svg';
 
 const getListChildren = list => {
 	return list.map((listItem, i) => {
@@ -30,7 +30,7 @@ const getListChildren = list => {
 export const IconList = props => {
 	return (
 		<div className='icon-list'>
-			{props.image && <img src={props.image} alt={props.imageAlt} />}
+			{props.image && <Image src={props.image} alt={props.imageAlt} />}
 			<div className='title'>
 				<span className='const'>const </span>
 				<span className='name'>{props.title}</span>

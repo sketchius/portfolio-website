@@ -1,4 +1,3 @@
-import './Components.css';
 import { SvgImage } from './SvgImage';
 
 export const InfoBox = props => {

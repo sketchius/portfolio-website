@@ -1,25 +1,25 @@
-import './Components.css';
-import { ReactComponent as HtmlIcon } from './../svg/html5.svg';
-import { ReactComponent as CssIcon } from './../svg/css3.svg';
-import { ReactComponent as JavascriptIcon } from './../svg/javascript.svg';
-import { ReactComponent as ReactIcon } from './../svg/react.svg';
-import { ReactComponent as Checkmark } from './../svg/checkmark.svg';
-import { ReactComponent as Plus } from './../svg/plus.svg';
-import { ReactComponent as Chart } from './../svg/chart.svg';
-import { ReactComponent as Github } from './../svg/github.svg';
-import { ReactComponent as Linkedin } from './../svg/linkedin.svg';
-import { ReactComponent as Resume } from './../svg/attach.svg';
-import { ReactComponent as Node } from './../svg/node.svg';
-import { ReactComponent as Express } from './../svg/express.svg';
-import { ReactComponent as Mongo } from './../svg/mongo.svg';
-import { ReactComponent as Java } from './../svg/java.svg';
-import { ReactComponent as Illustrator } from './../svg/illustrator.svg';
-import { ReactComponent as Photoshop } from './../svg/photoshop.svg';
-import { ReactComponent as Resolve } from './../svg/resolve.svg';
-import { ReactComponent as Api } from './../svg/api.svg';
-import { ReactComponent as Code } from './../svg/code.svg';
-import { ReactComponent as Live } from './../svg/live.svg';
-import { ReactComponent as About } from './../svg/about.svg';
+import HtmlIcon from '../../public/assets/svg/html5.svg';
+import CssIcon from '../../public/assets/svg/css3.svg';
+import JavascriptIcon from '../../public/assets/svg/javascript.svg';
+import ReactIcon from '../../public/assets/svg/react.svg';
+import Checkmark from '../../public/assets/svg/checkmark.svg';
+import Plus from '../../public/assets/svg/plus.svg';
+import Chart from '../../public/assets/svg/chart.svg';
+import Github from '../../public/assets/svg/github.svg';
+import Linkedin from '../../public/assets/svg/linkedin.svg';
+import Resume from '../../public/assets/svg/attach.svg';
+import Node from '../../public/assets/svg/node.svg';
+import Express from '../../public/assets/svg/express.svg';
+import Mongo from '../../public/assets/svg/mongo.svg';
+import Java from '../../public/assets/svg/java.svg';
+import Illustrator from '../../public/assets/svg/illustrator.svg';
+import Photoshop from '../../public/assets/svg/photoshop.svg';
+import Resolve from '../../public/assets/svg/resolve.svg';
+import Api from '../../public/assets/svg/api.svg';
+import Code from '../../public/assets/svg/code.svg';
+import Live from '../../public/assets/svg/live.svg';
+import About from '../../public/assets/svg/about.svg';
+import Next from '../../public/assets/svg/nextjs.svg';
 
 export const SvgImage = props => {
 	let className = 'svg-icon';
@@ -71,6 +71,8 @@ export const SvgImage = props => {
 			return <Live className={className + ' no-fill'} />;
 		case 'about':
 			return <About className={className + ' no-fill'} />;
+		case 'next':
+			return <Next className={className} />;
 		default:
 			return <div>?</div>;
 	}

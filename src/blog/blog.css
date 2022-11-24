@@ -116,10 +116,12 @@
 .blog .medium-image {
 	align-self: center;
 	width: 400px;
+	height: auto;
 }
 .blog .large-image {
 	align-self: center;
 	width: 800px;
+	height: auto;
 }
 
 .blog p strong {
@@ -154,6 +156,7 @@
 
 .blog-card img {
 	width: 100%;
+	height: auto;
 	border: #44406c 1px solid;
 	border-radius: 1rem;
 }
@@ -194,7 +197,7 @@
 	flex-grow: 0;
 	flex-shrink: 0;
 	background-size: cover;
-	background-image: url(../svg/left-bracket.svg);
+	background-image: url(../../public/assets/svg/left-bracket.svg);
 }
 
 .blog-card .right-curly-bracket {
@@ -202,7 +205,7 @@
 	flex-grow: 0;
 	flex-shrink: 0;
 	background-size: cover;
-	background-image: url(../svg/right-bracket.svg);
+	background-image: url(../../public/assets/svg/right-bracket.svg);
 }
 
 @media only screen and (min-width: 600px) {

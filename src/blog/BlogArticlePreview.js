@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './blog.css';
+import Image from 'next/image';
 
 export const BlogArticlePreview = props => {
 	return (
@@ -8,7 +8,7 @@ export const BlogArticlePreview = props => {
 			<a className='content' href={`/blog/${props.data.reference}`}>
 				<div className='left'>
 					<div className='image-holder'>
-						<img src={props.data.mainImage} alt={props.data.mainImageAltz} />
+						<Image src={props.data.mainImage} alt={props.data.mainImageAltz} />
 					</div>
 				</div>
 				<div className='details'>

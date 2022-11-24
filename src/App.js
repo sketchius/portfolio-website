@@ -1,30 +1,31 @@
+import Image from 'next/image';
+
 import { SectionHeader } from './Components/SectionHeader';
-import './App.css';
 import { IconList } from './Components/IconList';
 import { BlogCard } from './Components/BlogCard';
-import { ReactComponent as PortraitSVG } from './svg/portrait.svg';
-import { ReactComponent as BackgroundSVG } from './svg/landing-page-background.svg';
+import PortraitSVG from '../public/assets/svg/portrait.svg';
+import BackgroundSVG from '../public/assets/svg/landing-page-background.svg';
 import { ProjectInfo } from './Components/ProjectInfo';
 import { InfoBox } from './Components/InfoBox';
 import { SvgImage } from './Components/SvgImage';
-import { ReactComponent as Arrow } from './svg/arrow-down.svg';
+import Arrow from '../public/assets/svg/arrow-down.svg';
+import profilePicture from '../public/assets/jpg/profile.jpg';
 
 import React from 'react';
-import profile from './jpg/profile.jpg';
 
-import resume from './doc/Bryce Huhtala Resume.pdf';
+// import resume from '../public/assets/doc/Bryce Huhtala Resume.pdf';
 
-import websiteScreenshot from './jpg/PorfolioWebsiteScreenshot.jpg';
-import ttcScreenshot from './jpg/TTCScreenshot.jpg';
+import websiteScreenshot from '../public/assets/jpg/PorfolioWebsiteScreenshot.jpg';
+import ttcScreenshot from '../public/assets/jpg/TTCScreenshot.jpg';
 import rsgScreenshot from './blog/article/robot-alien-game/media/screenshot2.jpg';
 import { BlogArticle } from './blog/BlogArticle';
 import { BlogArticlePreview } from './blog/BlogArticlePreview';
 import { BlogList } from './blog/BlogList';
 import { getBlogData } from './blog/Blog';
 
-import FrontEndIcon from './png/front-end-icon.png';
-import BackEndIcon from './png/back-end-icon.png';
-import DesignIcon from './png/design-icon.png';
+import frontEndIcon from '../public/assets/png/front-end-icon.png';
+import backEndIcon from '../public/assets/png/back-end-icon.png';
+import designIcon from '../public/assets/png/design-icon.png';
 import { useState, useEffect, useRef } from 'react';
 
 function App() {
@@ -67,7 +68,7 @@ function App() {
 					<div className='code-section'>
 						<code className='line-numbers'>
 							<p>1</p>
-							<p>2</p>
+							<p>3</p>
 							<p>3</p>
 							<p>4</p>
 							<p>5</p>
@@ -147,7 +148,11 @@ function App() {
 							<article>
 								<div className='left'>
 									<figure>
-										<img src={profile} className='jpg' />
+										<Image
+											src={profilePicture}
+											className='jpg'
+											alt='photo of Bryce with his cat Mochi'
+										/>
 										<figcaption>Figure 1: Mochi the cat.</figcaption>
 									</figure>
 									<div className='socials'>
@@ -159,7 +164,7 @@ function App() {
 											<SvgImage name='linkedin' />
 											<label className='testt'>LinkedIn</label>
 										</a>
-										<a href={resume} alt='Resume Link'>
+										<a href={''} alt='Resume Link'>
 											<SvgImage name='resume' />
 											<label className='testt'>Resume</label>
 										</a>
@@ -211,7 +216,7 @@ function App() {
 								title={'Skills and Technologies'}></SectionHeader>
 							<article>
 								<IconList
-									image={FrontEndIcon}
+									image={frontEndIcon}
 									imageAlt={'Front-end Icon'}
 									className={'bullet-list'}
 									title={'frontEndTech'}
@@ -234,18 +239,18 @@ function App() {
 										},
 										{
 											icon: 'react',
-											text: 'ReactJS',
-											subtext: 'Hooks, Routing, Redux',
+											text: 'React',
+											subtext: 'Hooks, Redux, React Native',
 										},
 										{
-											icon: 'react',
-											text: 'React Native',
-											subtext: 'Async Storage, Navigation, Expo',
+											icon: 'next',
+											text: 'Next.js',
+											subtext: 'SSG, Routing',
 										},
 									]}
 								/>
 								<IconList
-									image={BackEndIcon}
+									image={backEndIcon}
 									imageAlt={'Back-end Icon'}
 									className={'bullet-list'}
 									title={'backEndTech'}
@@ -274,7 +279,7 @@ function App() {
 									]}
 								/>
 								<IconList
-									image={DesignIcon}
+									image={designIcon}
 									imageAlt={'Design Icon'}
 									className={'bullet-list'}
 									title={'designTech'}

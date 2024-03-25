@@ -2,6 +2,8 @@
 
 <img src="\public\assets\jpg\PorfolioWebsiteScreenshot-Small.jpg" alt="Screenshot of Website" width="500"/>
 
+[Live Site](https://portfolio-website-sketchius.vercel.app/)
+
 This is a small portfolio website made for, and by, Bryce Huhtala. It also serves as a blog.
 
 ## Technology Used

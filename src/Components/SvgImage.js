@@ -23,6 +23,7 @@ import Next from "../../public/assets/svg/nextjs.svg";
 import Vue from "../../public/assets/svg/vue.svg";
 import Postgres from "../../public/assets/svg/postgres.svg";
 import SpringBoot from "../../public/assets/svg/springboot.svg";
+import Figma from "../../public/assets/svg/figma.svg";
 
 export const SvgImage = (props) => {
   let className = "svg-icon";
@@ -82,6 +83,8 @@ export const SvgImage = (props) => {
       return <Postgres className={className} />;
     case "spring":
       return <SpringBoot className={className} />;
+    case "figma":
+      return <Figma className={className} />;
     default:
       return <div>?</div>;
   }

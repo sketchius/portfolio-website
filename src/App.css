@@ -33,6 +33,10 @@ section {
   max-width: 100vw;
 }
 
+article {
+  padding-bottom: 3rem;
+}
+
 .centered {
   display: flex;
   flex-direction: column;

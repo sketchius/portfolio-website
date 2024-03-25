@@ -17,6 +17,7 @@ import React from "react";
 
 import websiteScreenshot from "../public/assets/jpg/PorfolioWebsiteScreenshot.jpg";
 import ttcScreenshot from "../public/assets/jpg/TTCScreenshot.jpg";
+import livelyScreenshot from "../public/assets/jpg/LivelyScreenshot.png";
 import schedulatorScreenshot from "../public/assets/jpg/SchedulatorScreenshot.jpg";
 import rsgScreenshot from "./blog/article/robot-alien-game/media/screenshot2.jpg";
 import { BlogArticle } from "./blog/BlogArticle";
@@ -94,11 +95,11 @@ function App() {
               </p>
               <p className="square-bracket">[</p>
               <p>
-                <span className="string">'Full-Stack Developer'</span>
+                <span className="string">'Designer'</span>
                 <span className="punctuation">,</span>
               </p>
               <p>
-                <span className="string">'Illustrative Designer'</span>
+                <span className="string">'Web Developer'</span>
                 <span className="punctuation">,</span>
               </p>
               <p>
@@ -183,7 +184,7 @@ function App() {
                       <SvgImage name="linkedin" />
                       <label className="testt">LinkedIn</label>
                     </a>
-                    <a href={""} alt="Resume Link">
+                    <a href={"./resume.pdf"} alt="Resume Link">
                       <SvgImage name="resume" />
                       <label className="testt">Resume</label>
                     </a>
@@ -192,13 +193,12 @@ function App() {
                 <div className="right">
                   <p>
                     Hello! My name is Bryce Huhtala. I currently reside in
-                    Cincinnati, Ohio with my partner and our cat, Mochi. I was
-                    born and raised in Wyoming, and I went to school at
-                    University of Wyoming, where I earned a Bachelor’s degree in
-                    art. Since school, I’ve put my abilities to use as a
-                    freelance graphic designer, illustrator, and portrait
-                    artist, but ultimately decided I’d like to move into coding
-                    as a career.
+                    Cincinnati, Ohio with my partner and our two cats, Mochi and
+                    Yumi. I was born and raised in Wyoming, and I went to school
+                    at University of Wyoming, where I earned a Bachelor’s degree
+                    in art. Since school, I’ve put my abilities to use as a
+                    freelance graphic designer, illustrator, and web designer,
+                    and well as a parellel career as a web developer.
                   </p>
                   <p>
                     I’ve been programming on and off as a hobby since 1999. It’s
@@ -229,10 +229,10 @@ function App() {
                   <p>
                     <strong>Positivity:</strong> I look for the good in people
                     and try to contribute to a harmonious and collaborative work
-                    environment. I’d rather help someone else succeed than try
-                    and prove that I’m better than them. I find that there’s
-                    something to learn from everyone I meet, if I just take the
-                    time to look for it.
+                    environment. I’d always rather succeed as a team than be the
+                    one that gets the credit. I find that there’s something to
+                    learn from everyone I meet, if I just take the time to look
+                    for it.
                   </p>
                 </div>
               </article>
@@ -275,7 +275,7 @@ function App() {
                     {
                       icon: "vue",
                       text: "Vue.js",
-                      subtext: "Vuex, Vue Router",
+                      subtext: "Vue 3, Vuex, Vue Router",
                     },
                     {
                       icon: "next",
@@ -331,6 +331,11 @@ function App() {
                   brackets={true}
                   list={[
                     {
+                      icon: "figma",
+                      text: "Figma",
+                      subtext: "Wireframing, General Design",
+                    },
+                    {
                       icon: "illustrator",
                       text: "Illustrator",
                       subtext: "SVG, Print Design, Layout Mock-ups",
@@ -352,8 +357,30 @@ function App() {
             <section id="projects-section" ref={projectSectionRef}>
               <a name="projects" className="anchor" />
 
-              <SectionHeader number={"03"} title={"Projects"}></SectionHeader>
+              <SectionHeader number={"03"} title={"Portfolio"}></SectionHeader>
               <article>
+                <ProjectInfo
+                  title={"Lively"}
+                  description={`A life assistant application that offloads the burden of tracking Tasks and Goals using the power of AI.`}
+                  screenshot={livelyScreenshot}
+                  tags={[
+                    "Vue 3",
+                    "Firebase Cloud Functions",
+                    "Firestore",
+                    "OpenAI API",
+                  ]}
+                  links={[
+                    {
+                      text: "Code",
+                      url: "https://lively-ai.web.app/",
+                    },
+                    {
+                      text: "Live",
+                      url: "https://lively-ai.web.app/",
+                    },
+                  ]}
+                />
+
                 <ProjectInfo
                   title={"Schedulator"}
                   description={`A medical scheduling app designer for both patients and providers that makes it easy for appointments to be scheduled and kept track of.`}

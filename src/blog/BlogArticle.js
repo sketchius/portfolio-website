@@ -24,6 +24,7 @@ const BlogArticleContent = props => {
 				</div>
 			</div>
 			<article>{props.body}</article>
+			<div className="bottom-spacer"></div>
 		</main>
 	);
 };
